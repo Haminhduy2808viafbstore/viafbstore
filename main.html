@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đồ Thị Hàm Số</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Đồ Thị Hàm Số</h1>
+
+  <div id="controls">
+    <input type="text" id="expressionInput" placeholder="Nhập hàm số, ví dụ: (2*x-1)/(x+2)">
+    <button id="drawButton">Thêm Đồ Thị</button>
+    <button id="resetButton">Reset</button>
+    <label>
+      Màu Đồ Thị:
+      <input type="color" id="colorPicker" value="#4a90e2">
+    </label>
+    <label>
+      Hiển Thị Lưới:
+      <input type="checkbox" id="gridToggle" checked>
+    </label>
+    <button id="saveButton">Lưu Kết Quả</button> <!-- Nút lưu ảnh -->
+  </div>
+
+  <div id="canvasContainer">
+    <canvas id="canvas" width="800" height="600"></canvas>
+  </div>
+
+  <h3>Hướng Dẫn Nhập</h3>
+  <div id="description">
+    <table>
+      <tr>
+        <th>Phép Toán</th>
+        <th>Ký Hiệu</th>
+      </tr>
+      <tr>
+        <td>Mũ</td>
+        <td><code>**</code></td>
+      </tr>
+      <tr>
+        <td>Nhân</td>
+        <td><code>*</code></td>
+      </tr>
+      <tr>
+        <td>Chia</td>
+        <td><code>/</code></td>
+      </tr>
+      <tr>
+        <td>Cộng</td>
+        <td><code>+</code></td>
+      </tr>
+      <tr>
+        <td>Trừ</td>
+        <td><code>-</code></td>
+      </tr>
+      <tr>
+        <td>Sin</td>
+        <td><code>sin(x)</code></td>
+      </tr>
+      <tr>
+        <td>Cos</td>
+        <td><code>cos(x)</code></td>
+      </tr>
+      <tr>
+        <td>Tan</td>
+        <td><code>tan(x)</code></td>
+      </tr>
+      <tr>
+        <td>Căn Bậc Hai</td>
+        <td><code>sqrt(x)</code></td>
+      </tr>
+      <tr>
+        <td>Hàm mũ</td>
+        <td><code>exp(x)</code></td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
